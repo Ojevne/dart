@@ -70,7 +70,7 @@ ${n11 ?? 11}, ${n12 ?? 12}, ${n13 ?? 13}, ${n14 ?? 14} ${n15 ?? 15}
   d3 ??= 3.5;
   print(
     chalk.green(
-      '${d1}, ${d2}, ${d3}, ${d4 ?? 0.0}, ${d5 ?? 0.0}, ${d6 ?? 0.0}, ${d7 ?? 0.0}, ${d8 ?? 0.0}, ${d9 ?? 0.0}, ${d10 ?? 0.0}, ${d11 ?? 0.0}, ${d12 ?? 0.0}, ${d13 ?? 0.0}, ${d14 ?? 0.0}, ${d15 ?? 0.0}\n',
+      '${d1 ?? 0.0}, ${d2 ?? 0.0}, ${d3 ?? 0.0}, ${d4 ?? 0.0}, ${d5 ?? 0.0}, ${d6 ?? 0.0}, ${d7 ?? 0.0}, ${d8 ?? 0.0}, ${d9 ?? 0.0}, ${d10 ?? 0.0}, ${d11 ?? 0.0}, ${d12 ?? 0.0}, ${d13 ?? 0.0}, ${d14 ?? 0.0}, ${d15 ?? 0.0}\n',
     ),
   );
 
@@ -276,7 +276,7 @@ ${n11 ?? 11}, ${n12 ?? 12}, ${n13 ?? 13}, ${n14 ?? 14} ${n15 ?? 15}
 
   print(
     chalk.green(
-      'Nome: ${nome!}, Idade: ${idade ?? 0}, Altura: ${altura ?? 0.0}, Ativo: ${ativo ?? false}, Apelidos: ${apelidos?.length ?? 0}\n',
+      'Nome: ${nome ?? 0.0}, Idade: ${idade ?? 0}, Altura: ${altura ?? 0.0}, Ativo: ${ativo ?? false}, Apelidos: ${apelidos?.length ?? 0}\n',
     ),
   );
   print(chalk.blue('✅ Fim do super-treino de tipos e Null Safety.'));
